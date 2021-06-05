@@ -1,0 +1,15 @@
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\PizzaOrderingSystemLibrary.deps.json
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\PizzaOrderingSystemLibrary.runtimeconfig.json
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\PizzaOrderingSystemLibrary.runtimeconfig.dev.json
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\PizzaOrderingSystemLibrary.dll
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\ref\PizzaOrderingSystemLibrary.dll
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\bin\Debug\net5.0\PizzaOrderingSystemLibrary.pdb
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.AssemblyInfoInputs.cache
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.AssemblyInfo.cs
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.dll
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\ref\PizzaOrderingSystemLibrary.dll
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.pdb
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.genruntimeconfig.cache
+C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzaOrderingSystemLibrary\obj\Debug\net5.0\PizzaOrderingSystemLibrary.csprojAssemblyReference.cache
