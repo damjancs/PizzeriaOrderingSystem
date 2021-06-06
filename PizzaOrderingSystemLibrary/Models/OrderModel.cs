@@ -14,7 +14,6 @@ namespace PizzaOrderingSystemLibrary.Models
         public string Note { get; set; }
         public int UserId { get; set; }
         public DateTime OrderDate { get; set; }
-
         public virtual OrderItemModel OrderedItem { get; set; }
     }
 }

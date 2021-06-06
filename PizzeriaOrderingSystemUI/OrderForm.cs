@@ -1,21 +1,16 @@
 ﻿using PizzaOrderingSystemLibrary;
 using PizzaOrderingSystemLibrary.DataAccess;
+using PizzaOrderingSystemLibrary.Helpers;
 using PizzaOrderingSystemLibrary.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PizzeriaOrderingSystemUI
 {
     public partial class OrderForm : Form
     {
-        private List<OrderItemModel> _orderedItems = new List<OrderItemModel>();
+        private List<OrderItemModel> _orderedItems = new();
         private UserModel _user;
 
         public OrderForm(UserModel user)
@@ -63,7 +58,9 @@ namespace PizzeriaOrderingSystemUI
 
         private void completeOrderButton_Click(object sender, EventArgs e)
         {
-            SqlConnector.AddOrder(_user, _orderedItems, totalPriceTextBox, noteTextBox);
+            var order = SqlConnector.AddOrder(_user, _orderedItems, totalPriceTextBox, noteTextBox);
+            var body = EmailSender.CreateEmailBody(_user, order);
+            EmailSender.SendEmail(body, _user.Email);
             MessageBox.Show("Order Completed. Thank You!");
             this.Close();
         }

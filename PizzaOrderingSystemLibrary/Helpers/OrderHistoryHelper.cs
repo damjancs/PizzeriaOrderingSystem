@@ -1,11 +1,6 @@
 ﻿using PizzaOrderingSystemLibrary.DataAccess;
 using PizzaOrderingSystemLibrary.Models;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PizzaOrderingSystemLibrary.Helpers
@@ -25,7 +20,7 @@ namespace PizzaOrderingSystemLibrary.Helpers
             {
                 ArrayList row = new ArrayList();
                 row.Add($"{order.Id}");
-                row.Add($"{order.TotalPrice}");
+                row.Add($"{order.TotalPrice} zł");
                 row.Add($"{order.OrderDate.ToString("dddd, dd MMMM yyyy")}");
                 orderHistoryDataViewGrid.Rows.Add(row.ToArray());
             }

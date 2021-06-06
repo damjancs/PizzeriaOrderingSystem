@@ -1,11 +1,9 @@
 ﻿using PizzaOrderingSystemLibrary.DataAccess;
 using PizzaOrderingSystemLibrary.Models;
-using PizzaOrderingSystemLibrary.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PizzaOrderingSystemLibrary
@@ -15,13 +13,14 @@ namespace PizzaOrderingSystemLibrary
         public static void AddOrderItemToBasket(List<OrderItemModel> orderedItemList, ListBox dishesListBox, ListBox additionListBox,
             TextBox priceTextBox, NumericUpDown numericUpDown)
         {
-                OrderItemModel oi = new OrderItemModel();
-
-                oi.DishName = dishesListBox.GetItemText(dishesListBox.SelectedItem);
-                oi.ItemPrice = Convert.ToDecimal(priceTextBox.Text);
-                oi.DishAdditions = ConvertAdditionListBoxToString(additionListBox);
-                oi.Quantity = (int)numericUpDown.Value;
-                orderedItemList.Add(oi);
+            OrderItemModel oi = new()
+            {
+                DishName = dishesListBox.GetItemText(dishesListBox.SelectedItem),
+                ItemPrice = Convert.ToDecimal(priceTextBox.Text),
+                DishAdditions = ConvertAdditionListBoxToString(additionListBox),
+                Quantity = (int)numericUpDown.Value
+            };
+            orderedItemList.Add(oi);
         }
 
         public static void RemoveOrderItemFromBasket(List<OrderItemModel> orderedItemList, ListBox orderedItemsListBox)
