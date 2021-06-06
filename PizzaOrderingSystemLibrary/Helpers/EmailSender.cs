@@ -44,7 +44,7 @@ namespace PizzaOrderingSystemLibrary.Helpers
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.EnableSsl = true;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("damians.emailsender@gmail.com", "emailsender12#");
+                smtpClient.Credentials = new NetworkCredential("", "");
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(message);
             }

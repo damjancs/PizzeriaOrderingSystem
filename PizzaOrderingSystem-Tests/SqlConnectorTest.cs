@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace PizzaOrderingSystem_Tests
 {
-    public class Tests
+    public class SqlConnectorTest
     {
         [SetUp]
         public void Setup()
