@@ -58,11 +58,18 @@ namespace PizzeriaOrderingSystemUI
 
         private void completeOrderButton_Click(object sender, EventArgs e)
         {
-            var order = SqlConnector.AddOrder(_user, _orderedItems, totalPriceTextBox, noteTextBox);
-            var body = EmailSender.CreateEmailBody(_user, order);
-            EmailSender.SendEmail(body, _user.Email);
-            MessageBox.Show("Order Completed. Thank You!");
-            this.Close();
+            try
+            {
+                var order = SqlConnector.AddOrder(_user, _orderedItems, totalPriceTextBox, noteTextBox);
+                var body = EmailSender.CreateEmailBody(_user, order);
+                EmailSender.SendEmail(body, _user.Email);
+                MessageBox.Show("Order Completed. Thank You!");
+                this.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("You don't have any items in your basket.");
+            }
         }
     }
 }
