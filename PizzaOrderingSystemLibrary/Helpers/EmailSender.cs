@@ -48,11 +48,7 @@ namespace PizzaOrderingSystemLibrary.Helpers
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(message);
             }
-            catch (Exception) 
-            {
-                throw;
-            }
-
+            catch (Exception) { }
         }
     }
 }

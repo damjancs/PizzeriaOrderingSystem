@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using PizzaOrderingSystemLibrary.DataAccess;
 
 namespace PizzaOrderingSystem_Tests
 {
@@ -7,12 +8,13 @@ namespace PizzaOrderingSystem_Tests
         [SetUp]
         public void Setup()
         {
+
         }
 
         [Test]
-        public void Test1()
+        public void GetUser_ReturnsUser()
         {
-            Assert.Pass();
+            
         }
     }
 }
