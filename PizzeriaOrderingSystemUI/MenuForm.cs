@@ -43,7 +43,7 @@ namespace PizzeriaOrderingSystemUI
             orderForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void orderHistoryButton_Click(object sender, EventArgs e)
         {
             OrderHistoryForm orderHistoryForm = new OrderHistoryForm(_user);
             orderHistoryForm.ShowDialog();

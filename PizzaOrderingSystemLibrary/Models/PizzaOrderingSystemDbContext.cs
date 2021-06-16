@@ -32,7 +32,6 @@ namespace PizzaOrderingSystemLibrary.Models
             modelBuilder.Entity<UserModel>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

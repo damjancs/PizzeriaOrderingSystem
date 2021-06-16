@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaOrderingSystemLibrary.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,7 @@ namespace PizzaOrderingSystemLibrary.Validators
                 MessageBox.Show("Please fill in all fields.");
                 return false;
             }
+
             if (!isEmailValid)
             {
                 MessageBox.Show("Please enter a valid email");
@@ -43,6 +45,7 @@ namespace PizzaOrderingSystemLibrary.Validators
                 phoneTextBox.Focus();
                 return false;
             }
+
             return true;
         }
         public static bool ValidateLoginProcess(TextBox usernameTextBox, TextBox passwordTextBox)

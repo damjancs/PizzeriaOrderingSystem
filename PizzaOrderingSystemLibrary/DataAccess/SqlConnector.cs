@@ -134,5 +134,24 @@ namespace PizzaOrderingSystemLibrary.DataAccess
 
             return orderItems;
         }
+
+        public static string CheckUserByEmail(string emailAddress)
+        {
+            using var db = new PizzaOrderingSystemDbContext();
+            var user = db.User
+                .First(u => u.Email == emailAddress);
+
+            return user.Email;
+        }
+
+        public static string CheckUserByUsername(string username)
+        {
+            using var db = new PizzaOrderingSystemDbContext();
+            var user = db.User
+                .First(u => u.Username == username);
+
+            return user.Username;
+        }
+
     }
 }

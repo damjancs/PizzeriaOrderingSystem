@@ -18,7 +18,6 @@ namespace PizzeriaOrderingSystemUI
         public OrderHistoryForm(UserModel user)
         {
             InitializeComponent();
-            //OrderHistoryHelper.CreateOrderHistoryTable(user, orderHistoryTable);
             _user = user;
         }
 

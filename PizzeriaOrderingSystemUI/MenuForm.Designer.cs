@@ -30,7 +30,7 @@ namespace PizzeriaOrderingSystemUI
         private void InitializeComponent()
         {
             this.createOrderButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.orderHistoryButton = new System.Windows.Forms.Button();
             this.menuGroupBox = new System.Windows.Forms.GroupBox();
             this.quitButton = new System.Windows.Forms.Button();
             this.helloLabel = new System.Windows.Forms.Label();
@@ -50,25 +50,25 @@ namespace PizzeriaOrderingSystemUI
             this.createOrderButton.UseVisualStyleBackColor = false;
             this.createOrderButton.Click += new System.EventHandler(this.createOrderButton_Click);
             // 
-            // button1
+            // orderHistoryButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(105, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 58);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Order History";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.orderHistoryButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.orderHistoryButton.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.orderHistoryButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.orderHistoryButton.Location = new System.Drawing.Point(105, 162);
+            this.orderHistoryButton.Name = "orderHistoryButton";
+            this.orderHistoryButton.Size = new System.Drawing.Size(220, 58);
+            this.orderHistoryButton.TabIndex = 7;
+            this.orderHistoryButton.Text = "Order History";
+            this.orderHistoryButton.UseVisualStyleBackColor = false;
+            this.orderHistoryButton.Click += new System.EventHandler(this.orderHistoryButton_Click);
             // 
             // menuGroupBox
             // 
             this.menuGroupBox.Controls.Add(this.quitButton);
             this.menuGroupBox.Controls.Add(this.helloLabel);
             this.menuGroupBox.Controls.Add(this.createOrderButton);
-            this.menuGroupBox.Controls.Add(this.button1);
+            this.menuGroupBox.Controls.Add(this.orderHistoryButton);
             this.menuGroupBox.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuGroupBox.Location = new System.Drawing.Point(12, 12);
@@ -119,7 +119,7 @@ namespace PizzeriaOrderingSystemUI
         #endregion
 
         private System.Windows.Forms.Button createOrderButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button orderHistoryButton;
         private System.Windows.Forms.GroupBox menuGroupBox;
         private System.Windows.Forms.Label helloLabel;
         private System.Windows.Forms.Button quitButton;

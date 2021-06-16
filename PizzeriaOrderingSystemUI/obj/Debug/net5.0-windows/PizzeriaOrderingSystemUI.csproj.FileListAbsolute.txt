@@ -59,5 +59,4 @@ C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\bin\
 C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\obj\Debug\net5.0-windows\PizzeriaOrderingSystemUI.RegisterUserForm.resources
 C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\obj\Debug\net5.0-windows\PizzeriaOrderingSystemUI.LoginForm.resources
 C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\obj\Debug\net5.0-windows\PizzeriaOrderingSystemUI.MenuForm.resources
-C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\bin\Debug\net5.0-windows\Z.EntityFramework.Extensions.EFCore.dll
 C:\Users\ddane\source\repos\PizzeriaOrderingSystem\PizzeriaOrderingSystemUI\obj\Debug\net5.0-windows\PizzeriaOrderingSystemUI.OrderHistoryForm.resources

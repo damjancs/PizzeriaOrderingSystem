@@ -47,9 +47,9 @@ namespace PizzeriaOrderingSystemUI
                     this.Close();
                 }
             }
-            catch (Exception)
+            catch (Exception) 
             {
-                MessageBox.Show("Username already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("This username is already taken.", "Error", MessageBoxButtons.OK);
             }
         }
 
