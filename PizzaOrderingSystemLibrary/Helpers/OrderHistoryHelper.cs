@@ -21,7 +21,7 @@ namespace PizzaOrderingSystemLibrary.Helpers
                 ArrayList row = new ArrayList();
                 row.Add($"{order.Id}");
                 row.Add($"{order.TotalPrice} zł");
-                row.Add($"{order.OrderDate.ToString("MM/dd/yyyy HH:mm")}");
+                row.Add($"{order.OrderDate.ToString("dd/MM/yyyy HH:mm")}");
                 orderHistoryDataViewGrid.Rows.Add(row.ToArray());
             }
 

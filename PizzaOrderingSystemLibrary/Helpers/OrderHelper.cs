@@ -67,15 +67,14 @@ namespace PizzaOrderingSystemLibrary
             List<DishAdditionModel> da = additionListBox.SelectedItems.Cast<DishAdditionModel>().ToList();
 
             decimal additionsPrice = 0;
-            foreach (var item in da)
+            foreach (var addition in da)
             {
-                additionsPrice += item.Price;
+                additionsPrice += addition.Price;
             }
 
             decimal orderItemPrice = (d.Price + additionsPrice) * numericUpDown.Value;
 
             priceTextBox.Text = $"{orderItemPrice:F2}";
-            priceTextBox.Invalidate();
         }
 
         public static void CalculateTotalPrice(List<OrderItemModel> orderedItemsList, TextBox totalPriceTextBox)
